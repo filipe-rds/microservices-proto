@@ -6,7 +6,7 @@ set -e  # para parar em caso de erro
 GITHUB_USERNAME=filipe-rds
 GITHUB_EMAIL=filipe.rds.dev@gmail.com
 
-SERVICE_NAME=order
+SERVICE_NAME=payment
 RELEASE_VERSION=v1.2.3
 
 # Instala os plugins necessários
