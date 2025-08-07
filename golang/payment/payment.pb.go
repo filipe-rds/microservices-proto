@@ -4,7 +4,7 @@
 // 	protoc        v3.21.12
 // source: payment/payment.proto
 
-package order
+package payment
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -148,7 +148,7 @@ const file_payment_payment_proto_rawDesc = "" +
 	"payment_id\x18\x01 \x01(\x03R\tpaymentId\x12\x17\n" +
 	"\abill_id\x18\x02 \x01(\x03R\x06billId2D\n" +
 	"\aPayment\x129\n" +
-	"\x06Create\x12\x15.CreatePaymentRequest\x1a\x16.CreatePaymentResponse\"\x00B4Z2github/filipe-rds/microservices-proto/golang/orderb\x06proto3"
+	"\x06Create\x12\x15.CreatePaymentRequest\x1a\x16.CreatePaymentResponse\"\x00B6Z4github/filipe-rds/microservices-proto/golang/paymentb\x06proto3"
 
 var (
 	file_payment_payment_proto_rawDescOnce sync.Once

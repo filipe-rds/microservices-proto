@@ -1,5 +1,5 @@
 syntax="proto3";
-option go_package="github/filipe-rds/microservices-proto/golang/order";
+option go_package="github/filipe-rds/microservices-proto/golang/payment";
 
 message CreatePaymentRequest{
     int64 user_id = 1;
