@@ -33,14 +33,3 @@ go.mod
 # Temporary files
 *.tmp
 *.temp
-
-# Protobuf files
-*.pb.go
-*.pb.gw.go
-*.pb.validate.go
-
-# gRPC files
-*.grpc.go
-
-# Generated files
-gen/
