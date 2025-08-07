@@ -1,0 +1,46 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Go workspace files
+*.out
+*.a
+*.o
+*.prof
+
+# Vendor directory
+/vendor/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# Go modules
+go.sum
+go.mod
+
+# Coverage files
+*.cov
+
+# Temporary files
+*.tmp
+*.temp
+
+# Protobuf files
+*.pb.go
+*.pb.gw.go
+*.pb.validate.go
+
+# gRPC files
+*.grpc.go
+
+# Generated files
+gen/
