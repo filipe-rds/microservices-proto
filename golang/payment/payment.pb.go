@@ -23,7 +23,7 @@ const (
 
 type CreatePaymentRequest struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	CostumerId    int64                  `protobuf:"varint,1,opt,name=costumer_id,json=costumerId,proto3" json:"costumer_id,omitempty"`
+	CustomerId    int64                  `protobuf:"varint,1,opt,name=customer_id,json=customerId,proto3" json:"customer_id,omitempty"`
 	OrderId       int64                  `protobuf:"varint,2,opt,name=order_id,json=orderId,proto3" json:"order_id,omitempty"`
 	TotalPrice    float32                `protobuf:"fixed32,3,opt,name=total_price,json=totalPrice,proto3" json:"total_price,omitempty"`
 	unknownFields protoimpl.UnknownFields
@@ -60,9 +60,9 @@ func (*CreatePaymentRequest) Descriptor() ([]byte, []int) {
 	return file_payment_payment_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *CreatePaymentRequest) GetCostumerId() int64 {
+func (x *CreatePaymentRequest) GetCustomerId() int64 {
 	if x != nil {
-		return x.CostumerId
+		return x.CustomerId
 	}
 	return 0
 }
@@ -139,8 +139,8 @@ const file_payment_payment_proto_rawDesc = "" +
 	"\n" +
 	"\x15payment/payment.proto\"s\n" +
 	"\x14CreatePaymentRequest\x12\x1f\n" +
-	"\vcostumer_id\x18\x01 \x01(\x03R\n" +
-	"costumerId\x12\x19\n" +
+	"\vcustomer_id\x18\x01 \x01(\x03R\n" +
+	"customerId\x12\x19\n" +
 	"\border_id\x18\x02 \x01(\x03R\aorderId\x12\x1f\n" +
 	"\vtotal_price\x18\x03 \x01(\x02R\n" +
 	"totalPrice\"O\n" +

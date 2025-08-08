@@ -23,8 +23,8 @@ const (
 
 type CreateOrderRequest struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	CostumerId    int32                  `protobuf:"varint,1,opt,name=costumer_id,json=costumerId,proto3" json:"costumer_id,omitempty"`
-	OrderItens    []*OrderItem           `protobuf:"bytes,2,rep,name=order_itens,json=orderItens,proto3" json:"order_itens,omitempty"`
+	CustomerId    int32                  `protobuf:"varint,1,opt,name=customer_id,json=customerId,proto3" json:"customer_id,omitempty"`
+	OrderItems    []*OrderItem           `protobuf:"bytes,2,rep,name=order_items,json=orderItems,proto3" json:"order_items,omitempty"`
 	TotalPrice    float32                `protobuf:"fixed32,3,opt,name=total_price,json=totalPrice,proto3" json:"total_price,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
@@ -60,16 +60,16 @@ func (*CreateOrderRequest) Descriptor() ([]byte, []int) {
 	return file_order_order_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *CreateOrderRequest) GetCostumerId() int32 {
+func (x *CreateOrderRequest) GetCustomerId() int32 {
 	if x != nil {
-		return x.CostumerId
+		return x.CustomerId
 	}
 	return 0
 }
 
-func (x *CreateOrderRequest) GetOrderItens() []*OrderItem {
+func (x *CreateOrderRequest) GetOrderItems() []*OrderItem {
 	if x != nil {
-		return x.OrderItens
+		return x.OrderItems
 	}
 	return nil
 }
@@ -191,11 +191,11 @@ const file_order_order_proto_rawDesc = "" +
 	"\n" +
 	"\x11order/order.proto\"\x83\x01\n" +
 	"\x12CreateOrderRequest\x12\x1f\n" +
-	"\vcostumer_id\x18\x01 \x01(\x05R\n" +
-	"costumerId\x12+\n" +
-	"\vorder_itens\x18\x02 \x03(\v2\n" +
+	"\vcustomer_id\x18\x01 \x01(\x05R\n" +
+	"customerId\x12+\n" +
+	"\vorder_items\x18\x02 \x03(\v2\n" +
 	".OrderItemR\n" +
-	"orderItens\x12\x1f\n" +
+	"orderItems\x12\x1f\n" +
 	"\vtotal_price\x18\x03 \x01(\x02R\n" +
 	"totalPrice\"i\n" +
 	"\tOrderItem\x12!\n" +
@@ -227,7 +227,7 @@ var file_order_order_proto_goTypes = []any{
 	(*CreateOrderResponse)(nil), // 2: CreateOrderResponse
 }
 var file_order_order_proto_depIdxs = []int32{
-	1, // 0: CreateOrderRequest.order_itens:type_name -> OrderItem
+	1, // 0: CreateOrderRequest.order_items:type_name -> OrderItem
 	0, // 1: Order.Create:input_type -> CreateOrderRequest
 	2, // 2: Order.Create:output_type -> CreateOrderResponse
 	2, // [2:3] is the sub-list for method output_type
